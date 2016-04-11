@@ -1,0 +1,11 @@
+{
+  "name": "openmrs-contrib-reactexample",
+  "version": "1.0.0",
+  "description": "Example OpenMRS app using React",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "OpenMRS <pascal@openmrs.org> (http://openmrs.org)",
+  "license": "MPL-2.0"
+}
