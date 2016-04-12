@@ -55,14 +55,14 @@ const patient = {
   "person": {
     "names": [{
       "givenName": "Nik",
-      "familyName": "Graf"
+      "familyName": "Graf",
     }],
     "gender": "M",
   },
   "identifiers": [{
     "identifierType": "05a29f94-c0ed-11e2-94be-8c13b969e334", // fixed value
     "identifier": "9AW2N9PHC7WJ2FC7YLV",                      // valid Luhn mod 30 check digit
-    "location": "8d6c993e-c2cc-11de-8d13-0010c6dffd0f"        // fixed value
+    "location": "8d6c993e-c2cc-11de-8d13-0010c6dffd0f",       // fixed value
   }]
 };
 
@@ -82,7 +82,7 @@ const patient = {
   "person": {
     "names": [{
       "givenName": "Pascal",
-      "familyName": "Brandt"
+      "familyName": "Brandt",
     }],
     "gender": "M",
     "birthdate": "1986-7-18",
@@ -92,19 +92,19 @@ const patient = {
       "cityVillage": "Cilbugaz",
       "stateProvince": "MB",
       "country": "Saint Lucia",
-      "postalCode": "41156"
+      "postalCode": "41156",
     }],
     "attributes": [{
       "attributeType": {
-        "uuid": "14d4f066-15f5-102d-96e4-000c29c2a5d7"        // fixed value
+        "uuid": "14d4f066-15f5-102d-96e4-000c29c2a5d7",       // fixed value
       },
-      "value": "(319) 498-9859"
+      "value": "(319) 498-9859",
     }]
   },
   "identifiers": [{
     "identifierType": "05a29f94-c0ed-11e2-94be-8c13b969e334", // fixed value
     "identifier": "9AW2N9PHC7WJ2FC7YLV",                      // valid Luhn mod 30 check digit
-    "location": "8d6c993e-c2cc-11de-8d13-0010c6dffd0f"        // fixed value
+    "location": "8d6c993e-c2cc-11de-8d13-0010c6dffd0f",       // fixed value
   }]
 };
 
