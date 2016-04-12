@@ -11,9 +11,13 @@ import Home from './containers/Home';
 import App from './components/App';
 import NotFound from './components/NotFound';
 
+import fetchPatients from './actions/fetchPatients';
+
 import './index.css';
 
 const store = configureStore();
+
+store.dispatch(fetchPatients());
 
 ReactDOM.render(
   <Provider store={store}>
