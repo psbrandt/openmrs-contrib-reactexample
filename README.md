@@ -5,9 +5,9 @@
 
 # OpenMRS React Example Application
 
-> Demonstration or using [React](http://facebook.github.io/react/) and [openmrs.js](https://github.com/psbrandt/openmrs.js)
+> Demonstration of using [React](http://facebook.github.io/react/) and [openmrs.js](https://github.com/psbrandt/openmrs.js)
 
-:bulb: ** This is a small app hacked together in a group programming session during
+:bulb: **This is a small app hacked together in a group programming session during
 the Stripe Open-Source Retreat. You probably shouldn't use it for anything.**
 
 ## OpenMRS Server
@@ -121,3 +121,7 @@ o.api.patient.createPatient({
 
  * Static docs: https://psbrandt.io/openmrs-refapp-docker/
  * Interactive docs: https://openmrs.psbrandt.io/openmrs/module/webservices/rest/apiDocs.htm
+
+## License
+
+[MPL 2.0 w/ HD](http://openmrs.org/license/)
