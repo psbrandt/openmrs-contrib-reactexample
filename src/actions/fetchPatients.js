@@ -4,10 +4,12 @@ export default () => (
   {
     type: UPDATE_PATIENTS,
     patients: [{
+      id: '1223',
       name: 'Pete',
     },
     {
-      name: 'Lisa',
+      id: '1224',
+      name: 'Pete',
     }],
   }
 );
