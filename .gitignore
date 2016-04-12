@@ -1,1 +1,6 @@
-node_modules
+node_modules/
+dist/
+*.d.ts
+.vscode/
+typings.json
+npm-debug.log
