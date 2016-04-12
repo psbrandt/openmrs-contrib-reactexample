@@ -26,7 +26,7 @@ The OpenMRS server details are as follows:
 npm install openmrs.js
 ```
 
-The web bundle will be at `node_modules/lib/openmrs.js/openmrs.bundle.min.js`.
+The web bundle will be at `node_modules/openmrs.js/lib/openmrs.bundle.min.js`.
 
 ### Logging In
 
