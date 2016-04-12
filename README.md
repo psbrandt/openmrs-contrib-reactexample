@@ -117,6 +117,19 @@ o.api.patient.createPatient({
 });
 ```
 
+### Patient Search
+
+```js
+o.api.patient.getAllPatients({
+  q: "Nik", // search query
+  v: "Full"
+}).then((results) => {
+  console.log(results.obj);
+}).catch((err) => {
+  console.log(err);
+});
+```
+
 ### API Docs
 
  * Static docs: https://psbrandt.io/openmrs-refapp-docker/
