@@ -11,7 +11,12 @@ import Home from './containers/Home';
 import App from './components/App';
 import NotFound from './components/NotFound';
 
+import openMRS from './lib/openMRS';
+
 import './index.css';
+
+openMRS.login('admin', 'Admin123')
+  .then(() => console.log('Login Successful'));
 
 const store = configureStore();
 

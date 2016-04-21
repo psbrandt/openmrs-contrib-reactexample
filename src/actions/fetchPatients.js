@@ -1,7 +1,18 @@
 import { UPDATE_PATIENTS } from '../constants/actions';
 
-export default () => (
-  {
+import openMRS from '../lib/openMRS';
+
+export default () => {
+  openMRS.api.patient.getAllPatients({
+    q: 'Jac', // search query
+    v: 'Full', // data view
+  }).then((results) => {
+    console.log(results.obj);
+  }).catch((err) => {
+    console.log(err);
+  });
+
+  return {
     type: UPDATE_PATIENTS,
     patients: [{
       id: '1223',
@@ -12,4 +23,4 @@ export default () => (
       name: 'Pete',
     }],
   }
-);
+};
