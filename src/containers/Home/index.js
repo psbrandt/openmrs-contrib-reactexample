@@ -21,5 +21,5 @@ const mapDispatchToProps = (dispatch) => (
   }
 );
 
-const decoratedHome = connect(mapStateToProps, mapDispatchToProps)(HomeContainer);
-export default decoratedHome;
+const DecoratedHome = connect(mapStateToProps, mapDispatchToProps)(HomeContainer);
+export default DecoratedHome;
