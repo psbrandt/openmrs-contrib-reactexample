@@ -10,6 +10,12 @@
 :bulb: **This is a small app hacked together in a group programming session during
 the Stripe Open-Source Retreat. You probably shouldn't use it for anything.**
 
+# Use this Example
+
+Clone the repository and then run `npm install` to install all the dependencies.
+
+Run `npm start` to start the application on `localhost:3001`.
+
 ## OpenMRS Server
 
 The OpenMRS server details are as follows:
@@ -20,7 +26,7 @@ The OpenMRS server details are as follows:
 
 ## openmrs.js basics
 
-### Installing
+### Installing openmrs.js
 
 ```
 npm install openmrs.js
