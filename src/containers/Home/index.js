@@ -1,7 +1,6 @@
 import React from 'react';
 import { connect } from 'react-redux';
 import fetchPatients from '../../actions/fetchPatients';
-import updateSearchTerm from '../../actions/updateSearchTerm';
 import Home from '../../components/Home';
 
 const HomeContainer = (props) => (
@@ -16,11 +15,8 @@ const mapStateToProps = (state) => (
 
 const mapDispatchToProps = (dispatch) => (
   {
-    onFetchPatients: () => {
-      dispatch(fetchPatients());
-    },
-    updateSearchTerm: (searchTerm) => {
-      dispatch(updateSearchTerm(searchTerm));
+    onFetchPatients: (searchTerm) => {
+      dispatch(fetchPatients(searchTerm));
     },
   }
 );

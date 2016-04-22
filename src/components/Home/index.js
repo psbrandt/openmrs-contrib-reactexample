@@ -1,9 +1,8 @@
 import React from 'react';
 
-const Home = ({ patients, onFetchPatients, updateSearchTerm }) => (
+const Home = ({ patients, onFetchPatients }) => (
   <div>
-    <input type="text" placeholder="search term" onChange={ (event) => updateSearchTerm(event.target.value) } />
-    <button onClick={ () => onFetchPatients('Jac') } >Fetch Patients</button>
+    <input type="text" placeholder="search term" onChange={ (event) => onFetchPatients(event.target.value) } />
     <ul>
       {
         patients.map((patient) =>
