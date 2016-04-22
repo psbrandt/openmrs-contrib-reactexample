@@ -3,12 +3,12 @@ import thunkMiddleware from 'redux-thunk';
 import createLogger from 'redux-logger';
 import patients from '../reducers/patients';
 
-const logger = createLogger();
+const loggerMiddleware = createLogger();
 const reducer = combineReducers({ patients });
 
 const createStoreWithMiddleware = applyMiddleware(
   thunkMiddleware,
-  logger
+  loggerMiddleware
 )(createStore);
 
 export default function configureStore(initialState) {
