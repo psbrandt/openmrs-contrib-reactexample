@@ -4,27 +4,25 @@
   "description": "Example OpenMRS app using React",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "author": "OpenMRS <pascal@openmrs.org> (http://openmrs.org)",
-  "license": "MPL-2.0",
-  "scripts": {
     "start": "babel-node server.js",
     "start:prod": "NODE_ENV=production PORT=8000 babel-node server.js",
     "build": "rimraf dist && NODE_ENV=production webpack --config ./webpack.production.config.js --progress --profile --colors",
     "lint": "eslint src; exit 0",
     "clean": "rimraf dist"
   },
+  "author": "OpenMRS <pascal@openmrs.org> (http://openmrs.org)",
+  "license": "MPL-2.0",
   "dependencies": {
+    "express": "^4.13.4",
     "lodash": "^4.8.2",
+    "openmrs.js": "0.0.2",
     "react": "^15.0.0",
     "react-dom": "^15.0.0",
     "react-redux": "^4.4.1",
     "react-router": "^2.0.1",
     "redux": "^3.3.1",
     "redux-logger": "^2.6.1",
-    "redux-thunk": "^2.0.1",
-    "express": "^4.13.4"
+    "redux-thunk": "^2.0.1"
   },
   "devDependencies": {
     "babel-cli": "^6.6.4",

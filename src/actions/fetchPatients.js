@@ -5,7 +5,7 @@ import openMRS from '../lib/openMRS';
 export default () => {
   openMRS.api.patient.getAllPatients({
     q: 'Jac', // search query
-    v: 'Full', // data view
+    v: 'full', // data view
   }).then((results) => {
     console.log(results.obj);
   }).catch((err) => {

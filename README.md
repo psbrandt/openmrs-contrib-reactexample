@@ -128,7 +128,7 @@ o.api.patient.createPatient({
 ```js
 o.api.patient.getAllPatients({
   q: "Nik", // search query
-  v: "Full"
+  v: "full",
 }).then((results) => {
   console.log(results.obj);
 }).catch((err) => {
