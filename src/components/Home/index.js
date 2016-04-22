@@ -2,11 +2,11 @@ import React from 'react';
 
 const Home = ({ patients, onFetchPatients }) => (
   <div>
-    <button onClick={onFetchPatients} >Fetch Patients</button>
+    <button onClick={ () => onFetchPatients('Jac') } >Fetch Patients</button>
     <ul>
       {
         patients.map((patient) =>
-          <li key={ patient.id }>{patient.name}</li>
+          <li key={ patient.uuid }>{patient.display}</li>
         )
       }
     </ul>

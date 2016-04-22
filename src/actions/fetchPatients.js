@@ -2,25 +2,16 @@ import { UPDATE_PATIENTS } from '../constants/actions';
 
 import openMRS from '../lib/openMRS';
 
-export default () => {
+export default (searchTerm) => (dispatch) => {
   openMRS.api.patient.getAllPatients({
-    q: 'Jac', // search query
+    q: searchTerm, // search query
     v: 'full', // data view
-  }).then((results) => {
-    console.log(results.obj);
+  }).then((response) => {
+    dispatch({
+      type: UPDATE_PATIENTS,
+      patients: response.obj.results,
+    });
   }).catch((err) => {
-    console.log(err);
+    console.log('Error fetching patients: ', err);
   });
-
-  return {
-    type: UPDATE_PATIENTS,
-    patients: [{
-      id: '1223',
-      name: 'Pete',
-    },
-    {
-      id: '1224',
-      name: 'Pete',
-    }],
-  }
 };

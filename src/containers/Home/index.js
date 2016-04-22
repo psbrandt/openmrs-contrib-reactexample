@@ -15,8 +15,8 @@ const mapStateToProps = (state) => (
 
 const mapDispatchToProps = (dispatch) => (
   {
-    onFetchPatients: () => {
-      dispatch(fetchPatients());
+    onFetchPatients: (searchTerm) => {
+      dispatch(fetchPatients(searchTerm));
     },
   }
 );
